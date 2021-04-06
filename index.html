@@ -7,32 +7,34 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-        <!--  CSS & SCSS -->
+        <!-- CSS -->
         <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/footer.css">
 
         <title>mySchool</title>
     </head>
 
     <body>
         <!-- Header -->
-        <div class="bg-dark">
+        <div id="header" class="bg-dark">
             <div class="container">
                 <div class="row">
                     <nav class="col navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand" href="index.html">Info School</a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/small-logo.png" class="img-fluid" width="53" height="30" alt="Website logo" style="crop: auto">
+                            mySchool
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div id="navbarContent" class="collapse navbar-collapse">
                             <ul class="navbar-nav">
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link" href="index.html">Accueil</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Cours</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="lessons.html">Cours</a>
                                 </li>
                             </ul>
                         </div>
@@ -41,33 +43,53 @@
             </div>
         </div>
 
+
+
         <!-- Main Container -->
-        <div class="container">
-            <div class="jumbotron">
-                <h1>Welcome to mySchool ! </h1>
+        <div class="container my-3">
+            <div  id="carouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/carousel/apprenant.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/carousel/apprenant2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-12 col-lg-4">
-                    <div class="card">
+                    <div class="card border-3 shadow">
+                        <img class="card-img-top" src="assets/home/certificate.png" alt="Be certified">
                         <div class="card-body">
-                            <h5 class="card-title">Titre de la carte</h5>
-                            <p class="card-text">Contenu textuel de la carte</p>
+                            <h5 class="card-title">Devenez diplômé</h5>
+                            <p class="card-text">De zéro à héros, obtenez un diplôme en informatique.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="card">
+                    <div class="card border-3 shadow">
+                        <img class="card-img-top" src="assets/home/instruction.png" alt="Receive good instructions">
                         <div class="card-body">
-                            <h5 class="card-title">Titre de la carte</h5>
-                            <p class="card-text">Contenu textuel de la carte</p>
+                            <h5 class="card-title">Formateurs de qualités</h5>
+                            <p class="card-text">Tous nos cours sont réalisés par les meilleurs informaticiens.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="card">
+                    <div class="card border-3 shadow">
+                        <img class="card-img-top" src="assets/home/job.png" alt="Job guaranteed">
                         <div class="card-body">
-                            <h5 class="card-title">Titre de la carte</h5>
-                            <p class="card-text">Contenu textuel de la carte</p>
+                            <h5 class="card-title">Un travail garanti</h5>
+                            <p class="card-text">Nous vous garantissons un emploi à l'issue de votre formation.</p>
                         </div>
                     </div>
                 </div>
@@ -75,11 +97,11 @@
         </div>
 
         <!-- Footer -->
-        <div class="bg-light">
-            <div class="container fixed-bottom">
+        <div id="footer" class="bg-light p-3s">
+            <div class="container">
                 <div class="row">
                     <div class="col">
-                        <ul class="list-inline text-center">
+                        <ul class="list-inline text-center align-content-center">
                             <li class="list-inline-item"><a href="#">À propos</a></li>
                             <li class="list-inline-item">&middot;</li>
                             <li class="list-inline-item"><a href="#">Vie privée</a></li>
